@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+  
+  
+* {
+	margin:0px;
+	padding:0px;
+	outline:none;
+}
+body {
+	background-color:#FFFFF0; /*Ivory*/
+}
+#topNavBar {
+	background-color:#E2B618;  /*Gold*/
+	border-bottom: 3px solid black;
+	box-shadow: 0px 5px 10px 1px gray;
+	min-width: 1000px;
+	width:100%;
+	z-index:99;
+	color:black;
+	margin-bottom:10px;
+}
+#topNavBar ul {
+	list-style:none;
+	display:inline;
+}
+#topNavBar>ul li {
+	padding:20px;
+	float:right;
+	border-left: 1px solid black;
+	width:15%;
+	max-width:150px;
+	font-family: "aguafina script";
+	text-align:right;
+	font-size:1.3em;
+	transition: color .2s, background-color 0.2s, height 0.2s;
+}
+#homeGreeting {
+}
+#topNavBar ul li:hover {
+	background-color:#FFFFF0;
+	
+	
+}
+.active{
+	color:#E2B618;
+	background-color:black;
+	height:35px;
+	border-bottom: 3px solid #E2B618;
+	box-shadow: 0px 0px 20px 3px black;
+}
+h1 {
+	font-family:"Qwigley";
+	font-size:3em;
+	color:#E2B618;
+}
+h3 {
+	font-family:"nixie one";
+}
+p {
+	font-family: "oleo script";
+}
+blockquote {
+	margin:10px 80px;
+	border-left: 10px solid #E2B618;
+	padding: 10px;
+	font-family: "snippet";
+	font-size: 1.1em;
+}
+
+input[type=text], select {
+	font-family:Oxygen;
+	padding:8px 20px;
+	border-radius:5px;
+	border:1px solid #FFFFF0;
+	box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+	color:#4B0505; /*crimson*/
+	font-size: 1.3em;
+	margin:15px 0px;
+	width:100%;
+	padding:20px;
+}
+input:focus, select:focus {
+	border:1px solid #E2B618;
+}
+a.primary, button.primary {
+	font-family:snippet;
+	font-size: 14px;
+	border:0px solid black;
+	padding:15px 30px;
+	font-weight:bold;
+	border-radius:5px;
+	transition: color 0.3s, background-color 0.3s, border 0.3s, top .3s;
+	background-color:#E2B618;
+	color:#FFFFF0;
+	border: 1px solid #E2B618;
+	
+}
+a {
+	text-decoration:none;
+}
+
+/*Buttons*/
+a.primary:hover, button.primary:hover {
+	background-color:#FFFFF0;
+	color:#E2B618;
+	border: 1px solid black;
+	position: relative;
+	top: -5px;
+}
+
+a.secondary, button.secondary {
+	font-family:snippet;
+	font-size:14px;
+	border:0px solid black;
+	padding:15px 30px;
+	font-weight:bold;
+	border-radius:5px;
+	transition: color 0.3s, background-color 0.3s, border 0.3s, top .3s;
+	background-color:#4B0505;
+	color:#FFFFF0;
+	border: 1px solid #4B0505;
+}
+
+a.secondary:hover, button.secondary:hover {
+	background-color:#FFFFF0;
+	color:#4B0505;
+	position: relative;
+	top: -5px;
+}
+
+.center {
+	padding:auto;
+	text-align:center;
+	margin:auto;
+}
+
+
+
+.relative {
+	position:relative;
+}
+
+.pushedDown {
+	position:relative;
+	top: 200px
+}
+
+.guest{
+	padding: 20px;
+	font-size:32px;
+	border-bottom: 1px solid gray;
+	
+}
