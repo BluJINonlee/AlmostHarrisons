@@ -1,0 +1,2 @@
+AuthName "Test Site"
+AuthUserFile "/home/inonlee/.htpasswds/public_html/test/passwd"
