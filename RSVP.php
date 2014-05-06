@@ -1,74 +1,204 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"/>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Almost Harrison</title>
-<link rel="shortcut icon" type="img/png" href="assets/img/favicon.ico"/>
-<link rel="stylesheet" type="text/css" href="assets/stylesheets/unsemantic-grid-base.css"/>
-<link rel="stylesheet" type="text/css" href="assets/stylesheets/unsemantic-grid-responsive.css"/>
-<link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css"/>
-<link rel="stylesheet" type="text/css" href="assets/stylesheets/flexslider.css"/>
-<link href='http://fonts.googleapis.com/css?family=Nixie+One|Aguafina+Script|Snippet|Fredericka+the+Great|Oleo+Script|Oxygen+Mono|Qwigley|Oxygen|Montserrat+Subrayada' rel='stylesheet' type='text/css'/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>RSVP | Almost Harrisons</title>
+    <link rel="shortcut icon" type="img/png" href="assets/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/unsemantic-grid-responsive-tablet.css" />
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/ei/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Bad+Script|Josefin+Slab|Qwigley' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-<nav id="topNavBar"> <a href="index.html"><img src="assets/img/titleicon.png" width="90" height="63" /></a>
-  <ul>
-    <li>About US</li>
-    <li>Stories</li>
-    <li>Location</li>
-    <li class="active">RSVP</li>
-    <li>Registry</li>
-  </ul>
-</nav>
+    <!--Logo and Home Page-->
+    <div class="grid-container">
+        <div class="grid-30 push-35 tablet-grid-35 tablet-push-35 mobile-grid-35 mobile-push-35">
+            <a href="index.html" id="logo">
+                <img id="headerLogo" src="assets/img/logos/JH3.png" width="200px" />
+            </a>
+        </div>
+    </div>
 
-<!--Blockquotes-->
+     <!--Navigation  Bar -->
+    <div class="grid-container" id="topNavBar">
 
+        <a href="AboutUs.html">
+            <div class="grid-25">
+                About Us
+            </div>
+        </a>
+        <a href="Locations.html">
+            <div class="grid-25">
+                Location
+            </div>
+        </a>
+        <a href="noRSVP.html">
+            <div class="grid-25 active">
+                RSVP
+            </div>
+        </a>
+        <a href="Registry.html">
+            <div class="grid-25">
+                Registry
+            </div>
+        </a>
+    </div>
+
+
+	
+    
 <div class="grid-container" >
-  <div class="grid-100 center">
-    <form>
-      <h1>Thank You for Responding</h1>
-      <h2>Please enter your last name and first initial and we'll find you on the list.</h2>
-      <div class="grid-container">
-        <div class="grid-30 push-15">
-          <input type="text" name="lastName" placeholder="last name" />
-        </div>
-        <div class=" push-20 grid-30">
-          <input type="text" name="firstName" placeholder="first name" />
-        </div>
-      </div>
-      <div class="grid-container">
-        <div class="grid-20 push-70">
-          <button class="primary">Search</button>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
-
-
-<div class="grid-container">
-	<div class="grid-100">
+	<div class="grid-100 center">
+		<h1>Thank You for Responding</h1>
+		<h2>Please enter your last name and first initial and we'll find you on the list.</h2>
+        
+        
+		<div class="grid-container">
+			
 		
-			<div class="grid-80 guest">Joshua Harrison </div> <div class="grid-20 guest"><a class="primary" href="#">Accept</a> <a class="secondary" href="#">Decline</a></div>
-
-			<div class="grid-80 guest">Joshua Harrison </div> <div class="grid-20 guest"><a class="primary" href="#">Accept</a> <a class="secondary" href="#">Decline</a></div>
-
 		
+			<form action="RSVP.php" method="get">
+               
+                <div class="grid-30 push-30">
+				    <input type="text" name="lastName" placeholder="Last Name"/>
+                </div>
+                <div class="grid-15 push-35">
+				<input class="primary button" type="submit">
+                </div>
+            </form>
+			
+		</div>
 	</div>
 </div>
+		
+<?php
+//mysqli_query($con,$sql) To run query.
 
-<!--Scripts--> 
-<!-- jQuery --> 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> 
-<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script> 
-<script src="assets/js/custom.js"></script> 
-<script src="assets/js/jquery.flexslider.js"></script> 
-<script src="http://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script> 
-<script> 
-	$(document).ready(function() {
-		customEffects();
-	});
-</script>
+
+
+
+	if ($_GET) {
+	
+		$con = mysqli_connect("localhost","root","","toy");
+		
+		if (mysqli_connect_errno()) {
+			echo mysqli_connect_errno();
+			echo "
+            <div class='grid-container'>
+                <div class='grid-100'>
+                    <br/> There was a problem connecting to the database.
+                </div>
+            </div>
+            ";
+		} else {
+            /* echo "
+             <div class='grid-container'>
+                <div class='grid-100'>
+                    <br/> Connection to the database was successful!<br/>
+                </div>
+            </div>
+            "; */
+		
+			//UID INT, firstName CHAR(20), lastName CHAR(20), phone CHAR(10), email CHAR(50), address1 CHAR(50), address2 CHAR(20), meal CHAR(1), plusOne CHAR(1), PRIMARY KEY (UID)
+			$sql = "SELECT * FROM Guests WHERE lastName = '" . $_GET["lastName"] . "';";
+			
+			$results = mysqli_query($con,$sql);
+			//if result come back
+			if($results) {
+				//if there are any records in the table.
+                echo "
+                        <div class='clear'></div>
+                        <div class='grid-container'>
+                            <div class='grid-50 push-25 center'>
+                    ";
+				if (mysqli_num_rows($results)!=0){
+					
+                    
+                    
+                    if(mysqli_num_rows($results) > 1){
+						
+                        echo "<h2>Which {$_GET['lastName']} are you?</h2>";
+                            
+					} else {
+						echo "<h2>Is this you?</h2>";
+					}
+					
+                    echo "
+                            
+                        </div>
+                    </div>
+                    ";
+
+					
+					
+					while($row = mysqli_fetch_array($results)){
+					
+					echo "
+                        <div class='grid-container'>
+                            <div class='grid-100 guest'>
+                                <div class='grid-80'>
+                                    {$row['firstName']} {$row['lastName']}
+                                </div>
+                                <div class='grid-10 center'>
+                                    <a class='button primary' href='#'>Accept</a>
+                                </div>
+                                <div class='grid-10 center'>
+                                    <a class='button secondary' href='#'>Decline</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='clear'></div>
+                    
+                    ";
+
+					
+					
+					
+					//	echo $row['firstName']." ". $row['lastName']."<br/>";
+					
+					
+					
+					
+					
+					
+	  											
+					
+					
+					
+					}
+					
+
+  				
+  				} else {
+  					echo "
+                    <h2>There is no one by that name...</h2>
+                    If you received an invitation, and you cannot find your name, please contact Josh at xxx.xxx.xxxx.
+                    ";
+                      echo "
+                            
+                        </div>
+                    </div>
+                    ";
+  				}
+			} else {
+				echo "Something went wrong!".mysqli_error($con);
+			}
+		
+		}
+		
+	}
+
+?>
+ <div id="footer">
+    		<span class="left">
+    		Questions | Concerns? <a href="ContactUs.html">Contact Us!</a>
+    		</span>
+    		<span class="right">
+    		Design by Joshua A.L. Harrison // Logo by Nathalie R. Henaine
+    		</span>
+    	</div>
 </body>
+
 </html>
