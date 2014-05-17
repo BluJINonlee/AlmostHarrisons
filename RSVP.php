@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <div id="body">
     <!--Logo and Home Page-->
     <div class="grid-container">
         <div class="grid-30 push-35 tablet-grid-35 tablet-push-35 mobile-grid-35 mobile-push-35">
@@ -48,7 +49,6 @@
 
 
 	
-    
 <div class="grid-container" >
 	<div class="grid-100 center">
 		<h1>Thank You for Responding</h1>
@@ -138,15 +138,10 @@
 					echo "
                         <div class='grid-container'>
                             <div class='grid-100 guest'>
-                                <div class='grid-80'>
-                                    {$row['firstName']} {$row['lastName']}
+                                <div class='grid-100'>
+                                   <a href='response.php?GID={$row['GID']}&firstName={$row['firstName']}'> {$row['firstName']} {$row['lastName']}
                                 </div>
-                                <div class='grid-10 center'>
-                                    <a class='button primary' href='#'>Accept</a>
-                                </div>
-                                <div class='grid-10 center'>
-                                    <a class='button secondary' href='#'>Decline</a>
-                                </div>
+                                
                             </div>
                         </div>
                         <div class='clear'></div>
@@ -191,6 +186,8 @@
 	}
 
 ?>
+    
+   </div> 
  <div id="footer">
     		<span class="left">
     		Questions | Concerns? <a href="ContactUs.html">Contact Us!</a>
