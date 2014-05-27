@@ -1,3 +1,15 @@
+<?php
+    if(!$_REQUEST){
+     header('Location: RSVP.php');
+        die();
+    }
+
+?>
+
+
+
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"/>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -12,7 +24,7 @@
        if ($_REQUEST) {
            echo "<h1></h1>
         <form id='RSVPForm' method='post' action='confirmation.php'>
-
+            <input type='hidden' name='GID' value='".$_REQUEST['GID']."'/>
             <input type='text' name='email' placeholder='email address' />
             <br/>
             <select name='meal'>
