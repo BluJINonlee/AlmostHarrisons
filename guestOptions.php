@@ -25,7 +25,7 @@
            echo "<h1></h1>
         <form id='RSVPForm' method='post' action='confirmation.php'>
             <input type='hidden' name='GID' value='".$_REQUEST['GID']."'/>
-            <input type='email' name='email' placeholder='email address' />
+            <input type='email' name='email' placeholder='email address' required='required'/>
             <br/>
             <select name='meal'>
                 <option value='null' disabled='disabled' selected>Select Your Meal</option>
