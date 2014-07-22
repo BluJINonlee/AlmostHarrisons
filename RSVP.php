@@ -62,7 +62,7 @@
 			<form action="RSVP.php" method="get">
                
                 <div class="grid-30 push-30">
-				    <input type="text" name="lastName" placeholder="Last Name"/>
+				    <input id="lastName" type="text" name="lastName" placeholder="Last Name"/>
                 </div>
                 <div class="grid-15 push-35">
 				<input class="primary button" type="submit">
@@ -73,6 +73,11 @@
 	</div>
 </div>
 		
+		
+		<script>
+		document.onload = document.getElementById("lastName").focus();
+		
+		</script>
 <?php
 //mysqli_query($con,$sql) To run query.
 
