@@ -13,40 +13,7 @@
 
 <body>
 
-    <body>
-    <!--Logo and Home Page-->
-    <div class="grid-container">
-        <div class="grid-30 push-35 tablet-grid-35 tablet-push-35 mobile-grid-35 mobile-push-35">
-            <a href="index.html" id="logo">
-                <img id="headerLogo" src="assets/img/logos/JH3.png" width="200px" />
-            </a>
-        </div>
-    </div>
-
-     <!--Navigation  Bar -->
-    <div class="grid-container" id="topNavBar">
-
-        <a href="AboutUs.html">
-            <div class="grid-25">
-                About Us
-            </div>
-        </a>
-        <a href="Locations.html">
-            <div class="grid-25">
-                Location
-            </div>
-        </a>
-        <a href="noRSVP.html">
-            <div class="grid-25">
-                RSVP
-            </div>
-        </a>
-        <a href="Registry.html">
-            <div class="grid-25">
-                Registry
-            </div>
-        </a>
-    </div>
+    <?php include_once("header.php"); ?>
 
 
 
@@ -185,14 +152,6 @@
     </div>
     <br/>
     
-    	<div id="footer">
-    		<span class="left">
-    		Questions | Concerns? <a href="ContactUs.html">Contact Us!</a>
-    		</span>
-    		<span class="right">
-    		Design by Joshua A.L. Harrison // Logo by Nathalie R. Henaine
-    		</span>
-    	</div>
     
     
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
@@ -209,7 +168,7 @@
             });
     </script>
 
-
+	<?php include_once("footer.php"); ?>
 
 </body>
 

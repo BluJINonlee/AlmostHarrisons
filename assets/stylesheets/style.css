@@ -106,14 +106,14 @@ blockquote {
 }
 a,
 a:link {
-    text-decoration: underline;
+    text-decoration: none;
     color: black;
 }
 a:visited {
     color: inherited;
 }
 a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 #topNavBar a:hover {
     text-decoration: none;
