@@ -7,11 +7,13 @@
 
 <html>
     <head>
-    
+        <title>LAME! | Almost Harrison</title>
+        <?php include_once "HTMLhead.php"; ?>
     </head>
     <body>
+        
         <?php
-            
+            include_once "header.php";    
             //Connect DB
             $con = mysqli_connect("localhost", "root", "", "toy");
 
@@ -39,7 +41,7 @@
                 echo "Success!";
             }
 
-            
+            include_once "footer.php";
         ?>
     
     

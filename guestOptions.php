@@ -16,34 +16,43 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>RSVP | Almost Harrisons</title>
+    <?php include_once "HTMLhead.php"; ?>
 </head>
 
 <body>
   
-    <?php
-       if ($_REQUEST) {
-           echo "<h1></h1>
-        <form id='RSVPForm' method='post' action='confirmation.php'>
-            <input type='hidden' name='GID' value='".$_REQUEST['GID']."'/>
-            <input type='email' name='email' placeholder='email address' required='required'/>
-            <br/>
-            <select name='meal'>
-                <option value='null' disabled='disabled' selected>Select Your Meal</option>
-                <option value='chicken'>Chicken</option>
-                <option value='fish'>Fish</option>
-                <option value='vegetarian'>Vegetarian</option>
-            </select>
-            <br/>
-
-            <input type='submit' class='button primary' href='#' value='Accept Invitation' /><a href='RSVP.php'>cancel</a>";
-       }else{
-        echo "<h2>No information was received. Please return to the RSVP page <a href='RSVP.php'>here</a>";
-       }
-    
-    ?>
-
-    </form>
-   
+    <?php include_once "header.php";?>
+           <div class="grid-container">
+                <div class="grid-100 center">
+                    <h1>Yay!</h1>
+                    <h2>We're so excited that you have decided to come. Please take a couple seconds to let us know what you would like to have at the reception, and email, just in case we need to contact you.</h2>
+                </div>
+            </div>
+           <div class="grid-container">
+                <div class="grid-50">
+                    <h2>This is where the Menu Goes!</h2>
+                    <br/>
+                </div>
+                <div class="grid-50"
+                    <form id='RSVPForm' method='post' action='confirmation.php'>
+                        <input type='hidden' name='GID' value='".$_REQUEST['GID']."'/>
+                        <input type='email' name='email' placeholder='email address' required='required'/>
+                        <br/>
+                        <select name='meal'>
+                            <option value='null' disabled='disabled' selected>Select Your Meal</option>
+                            <option value='chicken'>Chicken</option>
+                            <option value='fish'>Fish</option>
+                            <option value='vegetarian'>Vegetarian</option>
+                        </select>
+                        <br/>
+                        <div class="grid-container">
+                            <div class="grid-50"><input type='submit' class='button primary' href='#' value='Accept Invitation' /></div>
+                            <div class="grid-50"><a class="button secondary" href='RSVP.php'>cancel</a></div>
+                        </div>
+                    </form>
+                </div>
+           </div>
+   <?php include_once "footer.php"; ?>
 </body>
 
 </html>

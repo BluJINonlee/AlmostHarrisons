@@ -129,7 +129,6 @@ a:hover {
 }
 .button:hover {
     background-color: transparent;
-    top: -2px;
     position: relative;
 }
 .primary {
