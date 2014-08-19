@@ -72,6 +72,10 @@ p {
 .josh {
     text-align: right;
 }
+#RSVPForm {
+    width: 100%;
+    padding-top: 50px;
+}
 .pictureFrame {
     width: 100%;
     height: 400px;
@@ -90,6 +94,10 @@ p {
 #topNavBar a:link {
     text-decoration: none;
     color: black;
+}
+
+#guestOptionForm {
+    padding-top: 50px;
 }
 .active {
     color: #E2B618;
@@ -110,10 +118,18 @@ a:link {
     color: black;
 }
 a:visited {
-    color: inherited;
+    color: inherit;
 }
-a:hover {
-    font-weight: bold;
+
+a.primary:visited, a.primary:link, a.primary:hover  {
+   color: black;
+}
+a.secondary:visited, a.secondary:link, a.secondary:hover  {
+   color: #E2B618;
+}
+
+.guest a:hover {
+    font-style: italic;
 }
 #topNavBar a:hover {
     text-decoration: none;
@@ -125,6 +141,9 @@ a:hover {
     transition: top .3s, background-color .3s, color .3s;
     font-family: "Josefin Slab";
     padding: 20px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
     
 }
 .button:hover {
@@ -150,6 +169,7 @@ select {
     /*crimson*/
     font-size: 1.3em;
     width: 100%;
+    margin-bottom: 20px;
 }
 input:focus,
 select:focus {
@@ -165,12 +185,11 @@ select:focus {
 }
 .pushedDown {
     position: relative;
-    top: 200px
+    top: 150px;
 }
 .guest {
     position: relative;
-    font-family: "Alegrey
- Sans SC", Ariel, Serif;
+    font-family: "Alegreya Sans SC", Ariel, Serif;
  font-size: 36px;
     border-bottom: 1px solid gray;
     padding-bottom: 10px;

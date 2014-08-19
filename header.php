@@ -11,7 +11,7 @@
     <div class="grid-container" id="topNavBar">
 
         <a href="aboutUs.php">
-            <div class="grid-25 <?php echo ( $_SERVER['PHP_SELF'] == "/almostharrisons/about.php" ? "active" : ""); ?>">
+            <div class="grid-25 <?php echo ( $_SERVER['PHP_SELF'] == "/almostharrisons/aboutUs.php" ? "active" : ""); ?>">
                 About Us
             </div>
         </a>
@@ -21,7 +21,7 @@
             </div>
         </a>
         <a href="RSVP.php">
-            <div class="grid-25 <?php echo ( $_SERVER['PHP_SELF'] == "/almostharrisons/rsvp.php" ? "active" : ""); ?>">
+            <div class="grid-25 <?php echo ( $_SERVER['PHP_SELF'] == "/almostharrisons/RSVP.php" ? "active" : ""); ?>">
                 RSVP
             </div>
         </a>
@@ -31,5 +31,5 @@
             </div>
         </a>
     </div>
-    <div id="body">
+    <div id="body" class="pushedDown">
 
