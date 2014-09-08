@@ -65,9 +65,19 @@ The Chicago born native with the lovable personality.... Joshua is a graduate of
     </div>
     <br/>
     <div class="grid-container">
-        <div class="grid-90 push-5">
+        <div class="grid-100 justify">
             <p>
-Jasmine and Joshua, now soon to be married, met at Roosevelt University during their freshmen year of college. More specifically, they were classmates in professor Monica Westin's English 102 class. In class, Jasmine was often annoyed at the amount of questions Joshua asked, and assigned him the moniker <em>teacher's pet</em>! Joshua believed Jasmine to be another black woman with an attitude, and mentally criticized a litter white skirt she wore occasionally. Despite previous dispositions, Joshua realized he had never actually talked to Jasmine, so he approached her after a lecture one afternoon. After a while of moderate dislike for Mr. Harrison, Jasmine began to grow fond of him. A conversation lead to sharing a meal, and not too long after, Jasmine and Joshua were inseparable. Beginning to date later that year, Jas and Josh dated nearly 4 years before he popped the question on July, 4th 2013. She, evidently, said yes! Now, they're <b><em>Almost Harrisons!</em></b>
+Jasmine and Joshua, now soon to be married, met at Roosevelt University during their freshmen year of college.
+More specifically, they were classmates in professor Monica Westin's English 102 class.
+In class, Jasmine was often annoyed at the amount of questions Joshua asked, and assigned him the moniker <em>teacher's pet</em> !
+Joshua believed Jasmine to be another woman with an attitude. Joshua just wanted to see her smile once and a while.
+Despite previous dispositions, Joshua realized he had never actually talked to Jasmine, so he approached her after a lecture one afternoon.
+After a while of moderate dislike for Mr. Harrison, Jasmine began to grow fond of him.
+A conversation lead to sharing a meal, and not too long after, Jasmine and Joshua were inseparable.
+Beginning to date later that year, Jas and Josh dated nearly 4 years before he popped the question on July, 4th 2013. She, evidently, said yes!
+            </p>
+            <br/>
+<p class="center">Now, they're <b><em>Almost Harrisons!</em></b></p>
             </p>
         </div>
 

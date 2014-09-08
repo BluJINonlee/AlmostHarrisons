@@ -31,5 +31,5 @@
             </div>
         </a>
     </div>
-    <div id="body" class="pushedDown">
+    <div id="body">
 

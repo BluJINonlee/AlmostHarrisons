@@ -31,9 +31,10 @@
             <img src="img/belvedere01.png" width="100%" />
 
         </div>
+	<br/>
         <div class="grid-50">
 
-            <p>The Ceremony and Reception will be held at Belvedere Banquets in the northwest suburb of Elk Grove Village, Illinois. Belvedere is a stunningly elegant venue where the atmosphere and service create lasting memories. We offer our guests the very best facilities and a caring, capable staff. Maps and Directions can be found at the
+            <p>The ceremony and reception will be held at Belvedere Banquets in the northwest suburb of Elk Grove Village, Illinois. Belvedere is a stunningly elegant venue where the atmosphere and service create lasting memories. We offer our guests the very best facilities and a caring, capable staff. Maps and Directions can be found at the
                 <strong><a href="#map">bottom of the page.</a></strong>
             </p>
         </div>
@@ -48,6 +49,7 @@
             <img src="http://cache.carlsonhotels.com/chi/images/hotels/ILELKGRO/NewCMS/Gallery/ExteriorDusk_650x370.jpg" width="100%" />
 
         </div>
+	<br/>
         <div class="grid-50">
 
             <p>
@@ -60,6 +62,7 @@
 </div>
         <br/>
         <br/>
+	<br/>
 
         <!--Google Map to Locations-->
         <div class="grid-container">

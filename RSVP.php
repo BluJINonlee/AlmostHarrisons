@@ -4,11 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>RSVP | Almost Harrisons</title>
-    <link rel="shortcut icon" type="img/png" href="assets/img/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="assets/stylesheets/unsemantic-grid-responsive-tablet.css" />
-    <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css" />
-    <link rel="stylesheet" type="text/css" href="assets/stylesheets/ei/style.css" />
-    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Bad+Script|Josefin+Slab|Qwigley' rel='stylesheet' type='text/css'>
+    <?php include_once "HTMLhead.php"; ?>
 </head>
 
 <body>
@@ -21,7 +17,7 @@
 <div class="grid-container" >
 	<div class="grid-100 center">
 		<h1>Thank You for Responding</h1>
-		<h2>Please enter your last name and first initial and we'll find you on the list.</h2>
+		<h2>Please enter your last name we'll see if you're on the list!</h2>
         
         
 		<div class="grid-container">
@@ -34,7 +30,7 @@
 				    <input id="lastName" type="text" name="lastName" placeholder="Last Name"/>
                 </div>
                 <div class="grid-15 push-35">
-				<input class="primary button" type="submit">
+				<input class="primary button" type="submit" value="Find Name">
                 </div>
             </form>
 			
@@ -49,13 +45,13 @@
 		</script>
 <?php
 //mysqli_query($con,$sql) To run query.
-
+include_once "sanitize.php";
 
 
 
 	if ($_GET) {
 	
-		$con = mysqli_connect("localhost","root","","toy");
+		include_once "connectDatabase.php";
 		
 		if (mysqli_connect_errno()) {
 			echo mysqli_connect_errno();
@@ -76,7 +72,7 @@
             "; */
 		
 			//UID INT, firstName CHAR(20), lastName CHAR(20), phone CHAR(10), email CHAR(50), address1 CHAR(50), address2 CHAR(20), meal CHAR(1), plusOne CHAR(1), PRIMARY KEY (UID)
-			$sql = "SELECT * FROM Guests WHERE lastName = '" . $_GET["lastName"] . "';";
+			$sql = "SELECT * FROM Guests WHERE lastName Like '".sanitize($_GET["lastName"])."%';";
 			
 			$results = mysqli_query($con,$sql);
 			//if result come back
@@ -143,7 +139,7 @@
   				} else {
   					echo "
                     <h2>There is no one by that name...</h2>
-                    If you received an invitation, and you cannot find your name, please contact Josh at xxx.xxx.xxxx.
+                    If you received an invitation, and you cannot find your name, please contact Josh at <strong><u><a href='mailto:joshua@almostharrisons.com'>joshua@almostharrisons.com</a></u></strong>.
                     ";
                       echo "
                             

@@ -22,7 +22,7 @@
             <h1>Registry</h1>
 
         </div>
-
+    <br/>
 
       
         <div class="grid-80 push-10">
@@ -30,31 +30,36 @@
         </div>
     </div>
     <br/>
+    <br/>
     <div class="grid-container">
         <div class="grid-30 mobile-grid-100">
             
-                <a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=540993963&pwsurl="><img width="100%" src="assets/img/bbb.png"/></a>
+                <a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=540993963&pwsurl=" target="_black"><img width="100%" src="assets/img/bbb.png"/></a>
             
         </div>
 
         <div class="grid-30 push-5 mobile-grid-100">
             
-                <a href="http://www1.macys.com/registry/wedding/guest/?registryId=2168538"><img width="100%" src="assets/img/macys"/></a>
+                <a href="http://www1.macys.com/registry/wedding/guest/?registryId=2168538" target="_black"><img width="100%" src="assets/img/macys"/></a>
             
         </div>
     
     
         <div class="grid-30 push-10 tablet-grid-100">
             
-                <a href="http://www.target.com/GiftRegistrySearchViewCmd?registryType=WD&jsRequest=true&catalogId=10051&status=completePage&cumulativeTime=-1&listId=KoYn4XpUpjfbaS8MCih0Ng&noOfPings=&registryFirstName=Jasmine&langId=-1&segmentGrpName=-1&storeId=10151&registryLastName=Douglas"><img width="100%" src="assets/img/target.png"/></a>
+                <a href="http://www.target.com/GiftRegistrySearchViewCmd?registryType=WD&jsRequest=true&catalogId=10051&status=completePage&cumulativeTime=-1&listId=KoYn4XpUpjfbaS8MCih0Ng&noOfPings=&registryFirstName=Jasmine&langId=-1&segmentGrpName=-1&storeId=10151&registryLastName=Douglas" target="_black"><img width="100%" src="assets/img/target.png"/></a>
             
         
     </div>
     <br/>
+    <br/>
     <div class="grid-100 center">
 
         <p>If the gift picking thing is just too tedious (Don't worry, Josh is like that too) liquid assets are just as appreciated as the solid ones!</p>
+        <br/>
+        <h3>If there are any questions or concerns about gifts or the registry, please contact me @ <u><a href="mailto:jasmine@almostharrisons.com">Jasmine@almostharrisons.com</a></u>!</h3>
     </div>
+    <br/>
     <div class="grid-100 center">
         <h1>THANK YOU FOR ALL YOUR LOVE & SUPPORT!!!</h1>
     </div>

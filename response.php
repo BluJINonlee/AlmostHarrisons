@@ -19,12 +19,12 @@
     
 <?php include_once "header.php"; ?><br/><br/><br/>
 <div class="grid-container">
-    <div class="grid-100 center"><h2>So <?php echo $_GET['firstName'];?>, what's it gonna be? You comin'?</h2></div>
+    <div class="grid-100 center"><h2>So <?php echo $_GET['firstName'];?>, what's it gonna be?</h2></div>
 </div>
 <br/><br/><br/>
 <div id="grid-container">
-    <div class="grid-20 push-30"><a class="primary button" href="guestOptions.php?GID=<?php echo $_GET['GID'];?>&firstName=<?php echo $_GET['firstName'];?>">Accept</a></div>
-    <div class="grid-20 push-40"><a class="secondary button" href="lame.php?GID=<?php echo $_GET['GID'];?>">Decline</a></div>
+    <div class="grid-10 push-30"><a class="primary button" href="guestOptions.php?GID=<?php echo $_GET['GID'];?>&firstName=<?php echo $_GET['firstName'];?>">Accept</a></div>
+    <div class="grid-10 push-50"><a class="secondary button" href="lame.php?GID=<?php echo $_GET['GID'];?>">Decline</a></div>
 </div>
 <?php include_once "footer.php"; ?>
 </body>
