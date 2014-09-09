@@ -39,6 +39,8 @@
                  <p><em>Fresh fillet of whitefish encrusted with parmesan reggiano cheese and served with a chive beurre blanc sauce.</em></p>
                  <h2>Eggplant Parmesan</h2>
                  <p><em>Tender slices of eggplant bread and baked with mozzarella cheese and homemade marinara over penne pasta</em></p>
+                 <br/><hr/><br/>
+                    <p><h3>All entrees will be served with Rosted Garlic Parmesan Mashed Potatoes, Aparagus, and Carrots</h3></p>
              </div>
              <div class="grid-40 push-10">
                  <h2 class="center">What are you going to have?</h2>

@@ -1,6 +1,6 @@
 <?php
 
-$con = mysqli_connect("localhost", "develpj8_Guest", "_rE[(6vULA*a", "develpj8_wedding");
+$con = mysqli_connect("localhost", "root", "", "toy");
 
             //Check for connection error
             if(mysqli_connect_error()) {

@@ -23,8 +23,8 @@
 </div>
 <br/><br/><br/>
 <div id="grid-container">
-    <div class="grid-10 push-30"><a class="primary button" href="guestOptions.php?GID=<?php echo $_GET['GID'];?>&firstName=<?php echo $_GET['firstName'];?>">Accept</a></div>
-    <div class="grid-10 push-50"><a class="secondary button" href="lame.php?GID=<?php echo $_GET['GID'];?>">Decline</a></div>
+    <div class="grid-10 push-30 mobile-push-10 mobile-grid-30"><a class="primary button" href="guestOptions.php?GID=<?php echo $_GET['GID'];?>&firstName=<?php echo $_GET['firstName'];?>">Accept</a></div>
+    <div class="grid-10 push-50 mobile-push-30 mobile-grid-30"><a class="secondary button" href="lame.php?GID=<?php echo $_GET['GID'];?>">Decline</a></div>
 </div>
 <?php include_once "footer.php"; ?>
 </body>

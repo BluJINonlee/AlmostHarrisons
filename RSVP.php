@@ -26,10 +26,10 @@
 		
 			<form action="RSVP.php" method="get">
                
-                <div class="grid-30 push-30">
+                <div class="grid-30 push-30 mobile-grid-100">
 				    <input id="lastName" type="text" name="lastName" placeholder="Last Name"/>
                 </div>
-                <div class="grid-15 push-35">
+                <div class="grid-15 push-35 mobile-grid-100">
 				<input class="primary button" type="submit" value="Find Name">
                 </div>
             </form>
